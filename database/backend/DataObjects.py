@@ -504,7 +504,7 @@ class Orders:
                                   database=self.ConnectionData['database'])
             cur = con.cursor()
             sql = "INSERT INTO Orders(CustomerID, EmployeeID, OrderDate, ShipperID) VALUES (%s, %s, %s, %s)"
-            record_to_insert = (oders.CustomerID ,oders.EmployeeID , oders.OrderDate, oders.ShipperID)
+            record_to_insert = (oders.CustomerID ,oders.EmployeeID , oders.         Date, oders.ShipperID)
             cur.execute(sql, record_to_insert)
             con.commit()
             con.close()
